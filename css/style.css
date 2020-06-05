@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:century Gothic;
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../1.jpg);
+    height:100vh;
+    background-size: cover;
+    background-position:center;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-emphasis: none;
+    color green;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: gold;
+    color: #000;
+}
+ul li.active a{
+    background-color: rgb(122, 43, 226);
+    color: #000;
+
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+.main{
+    max-width: 1300px;
+    margin: auto;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: rgba(247, 12, 12, 0.897);
+    font-size: 70px;
+}
+
+.button{
+    position: absolute;
+    top: 45%;
+    left: 74%;
+    transform: translate(-20%,-50%);
+}
+
+
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: rgb(14, 13, 13);
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.btn:hover{
+    background-color: blueviolet;
+    color: rgb(245, 241, 243);
+}
+ul li ul li{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.404);
+    box-shadow:rosybrown;
+    height: 35px;
+}
+ul li:hover ul li{
+    display: block;
+    transition: 1s all;
+    animation: drop 1s ease;
+
+}
+@keyframes drop{
+    0%{
+        transform: scale(2,2) rotatX(90deg);
+    }
+    100%{
+        transform: scale(1,1) rotateX(0deg);
+
+    }
+}
+body{
+    background-color: saddlebrown;
+}
+h1{
+    background-color: green;
+}
